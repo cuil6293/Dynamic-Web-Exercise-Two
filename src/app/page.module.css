@@ -5,7 +5,7 @@
 
 .pageWrapper h1{
     font-size: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .articleCardWrapper {
@@ -26,7 +26,7 @@
 }
 
 .articleCardText p{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .articleCardText a{

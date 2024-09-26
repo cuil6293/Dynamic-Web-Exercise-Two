@@ -32,3 +32,14 @@
 .articleCardText a{
     color: blue;
 }
+
+
+/* -----------------
+--- Article Page ---
+------------------*/
+
+.articlePageHeaderWrapper {
+    background-color: grey;
+    background-size: cover;
+    min-height: 340px;
+}

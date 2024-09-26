@@ -14,7 +14,6 @@ export default function Home() {
         id={article.id}
         publishedDate={article.publishedDate} 
         title={article.title}
-        
         />
         ))}
     </main>

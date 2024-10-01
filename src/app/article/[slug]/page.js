@@ -1,5 +1,7 @@
 import data from "../../data.json";
 import styles from "../../page.module.css";
+import ArticleTextDisplay from "../../components/ArticleTextDisplay.js";
+import { formatDateForArticle } from "@/app/components/utils";
 
 export default function Article({ params }){
     const slug = params.slug;
@@ -14,12 +16,14 @@ export default function Article({ params }){
                 }}
             >
                 <h1>{articleData.title}</h1>
-                <p>{articleData.publishedDate}</p>
-                <p>{articleData.blurb}</p>
+                <p>{formatDateForArticle(articleData.publishedDate)}</p>
+                <p className={styles.articlePageHeaderBlurb}>{articleData.blurb}</p>
             </div>
-            {articleData.articleText?.map((text, i) => (
-                <p key={i}>{text.data}</p>
-            ))}
+            <div className={styles.articleTextWrapper}>
+                {articleData?.articleText?.map((text, i) => (
+                    <ArticleTextDisplay key={i} data={text.data} type={text.type}></ArticleTextDisplay>
+                ))}
+            </div>
         </main>
     );
 }

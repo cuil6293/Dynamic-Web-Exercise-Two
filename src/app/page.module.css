@@ -4,12 +4,16 @@
 }
 
 .pageWrapper h1{
+    color: antiquewhite;
+    font-family: var(--font-rampartOne-regular);
     font-size: 50px;
     margin-bottom: 40px;
 }
 
 .articleCardWrapper {
-    border: 1px solid grey;
+    border: 3px dashed antiquewhite;
+    border-radius: 20px;
+    color: antiquewhite;
     display: flex;
     gap: 20px;
     margin-bottom: 40px;
@@ -17,6 +21,7 @@
 }
 
 .articleCardWrapper img {
+    border-radius: 10px;
     height: auto;
     width: 200px;
 }
@@ -30,7 +35,12 @@
 }
 
 .articleCardText a{
-    color: blue;
+    color: rgb(64, 105, 210);
+    font-weight: bold;
+}
+
+.articleCardText a:hover{
+    color: lightblue;
 }
 
 
@@ -39,7 +49,54 @@
 ------------------*/
 
 .articlePageHeaderWrapper {
+    color: white;
     background-color: grey;
     background-size: cover;
     min-height: 340px;
+    text-shadow: 2px 2px 0 black;
+}
+
+.articlePageHeaderWrapper h1{
+    font-size: 60px;
+    font-weight: lighter;
+    margin: 0 auto;
+    max-width: 680px;
+    padding-top: 60px;
+}
+
+.articlePageHeaderWrapper p{
+    margin: 0 auto;
+    padding-bottom: 20px;
+    max-width: 680px;
+}
+
+.articlePageHeaderBlurb{
+    font-size: 20px;
+}
+
+
+.articleTextWrapper{
+    color: white;
+    margin: 0 auto;
+    max-width: 680px;
+    padding-top: 60px;
+}
+
+.articleTextWrapper p{
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.articleTextWrapper h2{
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.articleTextWrapper h3{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 16px;
 }

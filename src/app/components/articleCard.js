@@ -7,7 +7,7 @@ export default function ArticleCard({ blurb, image, id, publishedDate, title }) 
     const formattedDate = `${freshDate.getMonth() + 1}/${freshDate.getDay()}/${freshDate.getFullYear()}`;
     return (
         <div className={styles.articleCardWrapper}>
-            <img src={image.url} alt={image.alt} />
+            <img src={image.url} alt={image.alt}/>
             <div className={styles.articleCardText}>
                 <h2>{title}</h2>
                 <p className={styles.articleCardDate}>{formatDateForArticle(publishedDate)}</p>

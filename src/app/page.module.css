@@ -11,6 +11,7 @@
 }
 
 .articleCardWrapper {
+    background-color: rgb(220, 150, 178);
     border: 3px dashed antiquewhite;
     border-radius: 20px;
     color: antiquewhite;
@@ -20,7 +21,7 @@
     padding: 20px;
 }
 
-.articleCardWrapper img {
+.articleCardWrapper img{
     border-radius: 10px;
     height: auto;
     width: 200px;
@@ -35,12 +36,13 @@
 }
 
 .articleCardText a{
-    color: rgb(64, 105, 210);
+    color: rgb(64, 122, 210);
     font-weight: bold;
 }
 
 .articleCardText a:hover{
     color: lightblue;
+    transition: 0.3s;
 }
 
 
